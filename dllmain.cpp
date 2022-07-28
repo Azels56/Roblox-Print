@@ -11,10 +11,10 @@ void console(const char* title) {
 	VirtualProtect(&FreeConsole, 1, old, &old);
 	AllocConsole();
 	SetConsoleTitleA(title);
-	FILE* t_dummy = new FILE{};
-	freopen_s(&t_dummy, "CONOUT$", "w", stdout);
-	freopen_s(&t_dummy, "CONOUT$", "w", stderr);
-	freopen_s(&t_dummy, "CONIN$", "r", stdin);
+	FILE* file_stream;
+	freopen_s(&file_stream, "CONOUT$", "w", stdout);
+	freopen_s(&file_stream, "CONOUT$", "w", stderr);
+	freopen_s(&file_stream, "CONIN$", "r", stdin);
 }
 
 void main()
