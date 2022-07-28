@@ -1,5 +1,5 @@
 # Roblox-Print
-The code is very bad and unoptimized.
+It calls the print function and print any text into roblox's console. 
 # To update the address
 "Module code did not return exactly one value"
 
